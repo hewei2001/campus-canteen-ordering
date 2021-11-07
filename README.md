@@ -1,14 +1,17 @@
-<img src="img/logo.png" align="center" alt="logo" width="60%"/>
+<div align="center">
+  <a href="https://github.com/hewei2001/campus-canteen-ordering"><img src="img/logo.png" align="center" alt="logo" width="60%"/></a>
+</div>
+
+---
 
 <p align="center">
     <a href="https://github.com/hewei2001/campus-canteen-ordering"><img src="https://img.shields.io/badge/status-updating-brightgreen.svg"></a>
     <a href="https://github.com/python/cpython"><img src="https://img.shields.io/badge/Python-3.8-FF1493.svg"></a>
     <a href="https://github.com/hewei2001/campus-canteen-ordering"><img src="https://img.shields.io/github/repo-size/hewei2001/campus-canteen-ordering"></a>
-    <a href="https://opensource.org/licenses/mit-license.php"><img src="https://badges.frapsoft.com/os/mit/mit.svg"></a> 
-    <a href="https://github.com/hewei2001/campus-canteen-ordering"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" height="36" width="36" ></a>
+    <a href="https://github.com/hewei2001/campus-canteen-ordering/blob/main/LICENSE"><img src="https://img.shields.io/github/license/hewei2001/campus-canteen-ordering"></a> 
 </p>
 
-## <p align="center">Campus Canteen Ordering System</p>
+# <p align="center">Campus Canteen Ordering System</p>
 
 HITSZ 2021 年秋季学期「数据库设计」课程实验项目，基于 MySQL+Django 实现**校园食堂点餐系统**。
 
@@ -21,13 +24,13 @@ HITSZ 2021 年秋季学期「数据库设计」课程实验项目，基于 MySQL
 - BootStrap 3.3.7
 - Django-simpleui
 
-### 系统功能 :snake:
+## 系统功能 :snake:
 
 <img src="img/func1.png" alt="管理员模块" align="center" width=80% />
 
 <img src="img/func2.png" alt="用户模块" align="center" width=80% />
 
-### 项目结构 :pencil:
+## 项目结构 :pencil:
 
 ```
 django_CCOS
@@ -74,7 +77,7 @@ django_CCOS
          └── my_order.html		//我的订单
 ```
 
-###  快速开始 :rocket:
+## 快速开始 :rocket:
 
 1. 初始化：
 
@@ -102,7 +105,7 @@ django_CCOS
    - 自行添加食堂、窗口、菜品，否则初始不显示
 
 
-### 效果图 :yum:
+## 效果图 :yum:
 
 ![image-20211107210032459](img/image-20211107210032459.png)
 
@@ -114,9 +117,9 @@ django_CCOS
 
 ![image-20211107210146836](img/image-20211107210146836.png)
 
-### 鸣谢 :love_letter:
+## 鸣谢 :love_letter:
 
-[Yiwen-Ding](https://github.com/Yiwen-Ding) 小朋友
+感谢 [Yiwen-Ding](https://github.com/Yiwen-Ding) 小朋友！
 
-如果这个项目帮到了你，就点个 :star: 吧 ~
+BTW，如果这个项目帮到了你，就点个 :star: 吧 ~
 
