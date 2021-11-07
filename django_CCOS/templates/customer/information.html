@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block title %}个人信息中心{% endblock %}
+{% block css %}
+<link href="{% static 'css/login.css' %}" rel="stylesheet"/>{% endblock %}
+
+{% block content %}
+<div class="container formback">
+    <div class="loginform jumbotron">
+        <h3>个人信息中心</h3>
+        <h5>（请完善地址）</h5>
+        <form class='form-group' action="/customer/info/" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <div class="text-left"><label for="Username">用户名：{{ request.session.user_name }}</label></div>
+            </div>
+            <div class="form-group">
+                <div class="text-left"><label for="TEL">电话：{{ request.session.tel }}</label></div>
+            </div>
+            <div class="form-group">
+                <div class="text-left"><label for="InputDistrict">校区：</label></div>
+                {{ address_form.district }}
+            </div>
+            <div class="form-group">
+                <div class="text-left"><label for="InputBuilding">校内建筑：</label></div>
+                {{ address_form.building }}
+            </div>
+            <div class="form-group">
+                <div class="text-left"><label for="InputHouse_number">门牌号：</label></div>
+                {{ address_form.room }}
+            </div>
+            <button type="reset" class="btn btn-default pull-left">重置</button>
+            <button type="submit" class="btn btn-primary pull-right">提交</button>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

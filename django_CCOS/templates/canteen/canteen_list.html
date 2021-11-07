@@ -1,0 +1,27 @@
+{% extends 'canteen/canteen_base.html' %}
+
+{% block store_content %}
+<div>
+    <div class="container">
+        <div class="row">
+
+            {% for i in canteen_list %}
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card cardmodify cardbackground" style="width: 18rem;">
+                    <div class="card-header">
+                        <h5><b>{{ i.canteen_name }}</b></h5>
+                    </div>
+                    <img class="card-img-top" src="{{ i.canteen_photo.url }}" alt="Card image cap" height="180px" width="320px">
+                    <div class="card-header" float="left">
+                        <h5><b>{{ i.canteen_active }}</b></h5>
+                        <h5><b>卫生等级：{{ i.sanitation_level }}</b></h5>
+                        <a href="/shop#{{i.canteen_id}}" class="btn btn-success btn-sm addtocartbutton"><font size="3px">进入食堂</font></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}

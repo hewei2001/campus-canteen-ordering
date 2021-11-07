@@ -1,0 +1,42 @@
+{% extends 'dish/dish_base.html' %}
+
+{% block product_content %}
+
+{% for i in shop_with_dish_list %}
+<div class="container headerdiv">
+    <h3 class="headertext" align="center" id="{{i.shop_id}}">{{ i.canteen.canteen_name }}『{{ i.shop_name }}』</h3>
+</div>
+<div>
+    <div class="container">
+        <div class="row">
+
+            {% for j in dish_list %}
+            {% if j.shop_id == i.shop_id %}
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card cardmodify cardbackground" style="width: 18rem;">
+                    <div class="card-header">
+                        <h5><b>{{ j.dish_name }}</b></h5>
+                    </div>
+                    <img class="card-img-top" src="{{ j.dish_photo.url }}" alt="Card image cap" height="180px"
+                         width="320px">
+                    <div class="card-body d-flex flex-column" data-cat="{{ i.dish_category }}">
+                        <p class="card-text">{{ j.dish_detail }}</p>
+                        <div class="mt-auto">
+                            <p class="card-text">售价：{{ j.dish_price }} 元</p>
+                            <div class="align-self-end container">
+                                <a class="btn btn-success btn-sm addtocartbutton"
+                                   href="{{ j.get_order_url }}"><font size="3px">加入订单！</font></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'dish/dish_base.html' %}
+{% block preproduct %}
+<div class="container headerdiv">
+    <h3 class="headertext" align="center">我的订单</h3>
+</div>
+{% endblock %}
+{% block product_content %}
+
+<style>
+    	.table th, .table td {
+    		text-align: center;
+    		vertical-align: middle!important;
+    	}
+
+</style>
+
+<div class="container jumbotron">
+
+    <div class="table-responsive text-nowrap">
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">列表项</th>
+                <th scope="col">订单号</th>
+                <th scope="col">顾客名称</th>
+                <th scope="col">菜品</th>
+                <th scope="col">商家</th>
+                <th scope="col">下单时间</th>
+                <th scope="col">订单价格</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for order in order_list %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>ID-{{ order.order_id }}</td>
+                <td>{{ order.customer.customer_name }}</td>
+                <td>{{ order.dish.dish_name }}</td>
+                <td>{{ order.dish.shop.shop_name }}</td>
+                <td>{{ order.order_time }}</td>
+                <td>{{ order.order_price }}元</td>
+            </tr>
+            {% empty %}
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

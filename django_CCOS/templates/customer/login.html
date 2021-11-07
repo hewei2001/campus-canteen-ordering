@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block title %}登录{% endblock %}
+{% block css %}<link href="{% static 'css/login.css' %}" rel="stylesheet"/>{% endblock %}
+
+{% block content %}
+<div class="container formback">
+  <div class="loginform jumbotron">
+    <h3>Login</h3>
+<!--    <div class="container">-->
+<!--        <div class="col-md-4 col-md-offset-4">-->
+          <form class='form-group' action="/customer/login/" method="post">
+
+            {% csrf_token %}
+            <div class="form-group">
+                <div class="text-left"><label for="InputUsername">用户名:</label></div>
+                {{ login_form.username}}
+            </div>
+            <div class="form-group">
+                <div class="text-left"><label for="InputPassword1">密码:</label></div>
+                {{ login_form.password }}
+            </div>
+
+            <button type="reset" class="btn btn-default pull-left">重置</button>
+            <button type="submit" class="btn btn-primary pull-right">登录</button>
+
+          </form>
+<!--        </div>-->
+<!--    </div> &lt;!&ndash; /container &ndash;&gt;-->
+</div>
+</div>
+{% endblock %}

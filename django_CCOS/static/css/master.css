@@ -1,0 +1,191 @@
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+
+.carouselwithform{
+  width:50%;
+  min-height: 100%;
+  height: 100%;
+
+  float: left;
+  display: inline;
+}
+
+/* .carouselwithform .carouselitem {
+  min-height: 100%;
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: inline;
+}
+
+.carouselwithform .carouselitem img {
+  height: 100%
+  width:100%;
+} */
+.siteinfodiv{
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.infoheader{
+  padding-bottom: 30px;
+}
+
+/* .infoparaone{
+  display: inline-block;
+  width: 50%;
+  float: left;
+  background-color: inherit;
+}
+
+.infoparatwo{
+  display: inline-block;
+  width: 50%;
+  float: right;
+  background-color: inherit;
+} */
+
+.divwithform {
+  min-height: 100%;
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: inline;
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.paraone{
+  padding-bottom: 25px;
+}
+
+
+.pararemaining{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.signupform{
+  width:50%;
+  min-height: 50%;
+  height: 50%;
+  float: right;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  padding:20px;
+  border-radius: 10px;
+}
+
+.form-text{
+color: black;
+}
+
+.nav-item{
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.inlinewithicon{
+  display: inline;
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+
+.cardmodify{
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.headerspacing{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.addtocartbutton{
+  float: right;
+  font-size: 12px;
+  display: inline;
+}
+
+.removefromcartbutton{
+  float: right;
+  font-size: 12px;
+  display: inline;
+}
+
+/* .addtocarttext .removefromcarttext {
+  display:inline;
+  font-size: 12px;
+} */
+
+.loginform{
+  width: 50%;
+  text-align: center;
+  /* background-color: #bff084; */
+}
+
+.formback{
+  margin-left: 25%;
+  margin-top: 90px;
+}
+
+body{
+  background-image:url("../../../media/images/backimage.jpg");
+  background-repeat:repeat-y;
+  background-size:auto;
+}
+
+.trashicon{
+  display: inline;
+  float: right;
+}
+
+.jumbotron{
+  /* background: rgba(177, 177, 177, 0.5); */
+    background: rgba(255,255,255, 0.5);
+}
+
+.checkoutbutton .continueshoppingbutton{
+  padding-top: 10px;
+}
+
+.headerdiv{
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+  border-radius: 10px;
+}
+
+.headertext{
+  padding: 5px;
+}
+
+.preparedorderdiv{
+  margin-top:40px;
+}
+
+.cardmodify {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+/* .messages{
+  position: fixed;
+  display: block;
+  align: center;
+} */
+
+/* .card{
+  display: inline-block;
+} */

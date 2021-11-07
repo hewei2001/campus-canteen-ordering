@@ -1,0 +1,8 @@
+.table>tbody>tr>td {
+    border: 0px;
+    text-align: center;
+}
+.table>thead>tr>th {
+    border: 0px;
+    text-align: center;
+}
