@@ -26,24 +26,25 @@ HITSZ 2021 年秋季学期「数据库设计」课程实验项目，基于 MySQL
 
 ## 系统功能 :snake:
 
-<img src="img/func1.png" alt="管理员模块" align="center" width=80% />
-
-<img src="img/func2.png" alt="用户模块" align="center" width=80% />
+<div align="center">
+	<img src="img/func1.png" alt="管理员模块" align="center" width=80% />
+	<img src="img/func2.png" alt="用户模块" align="center" width=80% />
+</div>
 
 ## 项目结构 :pencil:
 
 ```
 django_CCOS
- ├── canteen					//app1
- ├── customer					//app2
- ├── dish						//app3
+ ├── canteen				//app1
+ ├── customer				//app2
+ ├── dish				//app3
  │   ├── admin.py
  │   ├── apps.py
  │   ├── migrations
- │   ├── models.py				//数据库模型
+ │   ├── models.py			//数据库模型
  │   ├── tests.py
  │   ├── urls.py
- │   ├── views.py				//实现的视图
+ │   ├── views.py			//实现的视图
  │   └── __init__.py
  ├── django_CCOS
  │   ├── asgi.py
@@ -52,21 +53,21 @@ django_CCOS
  │   ├── wsgi.py
  │   └── __init__.py
  ├── manage.py
- ├── media						//图片文件
+ ├── media				//图片文件
  │   └── images
- ├── static						//样式文件
+ ├── static				//样式文件
  │   ├── bootstrap-3.3.7-dist
  │   ├── css
  │   └── js
- └── templates					//页面模板 
+ └── templates				//页面模板 
      ├── base.html
      ├── canteen
      │   ├── canteen_base.html
-     │   ├── canteen_list.html	//食堂展示
+     │   ├── canteen_list.html		//食堂展示
      │   └── shop_list.html		//窗口展示
      ├── customer
      │   ├── index.html
-     │   ├── information.html	//完善用户信息
+     │   ├── information.html		//完善用户信息
      │   ├── login.html			//登录界面
      │   ├── logout.html		//登出界面
      │   ├── register.html		//注册界面
