@@ -15,6 +15,8 @@
 
 HITSZ 2021 年秋季学期「数据库设计」课程实验项目，基于 MySQL+Django 实现**校园食堂点餐系统**。
 
+访问我的博客查看**完整开发文档** :rocket: ：https://hwcoder.top/DB-Project
+
 主要环境：
 
 - PowerDesigner
